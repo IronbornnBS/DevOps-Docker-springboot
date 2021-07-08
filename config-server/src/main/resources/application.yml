@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/IronbornnBS/DevOps-Docker-springboot.git
+          username: IronbornnBS
+          password: Nomsa601
+          search-paths:
+            - 'config-server-store/*service'
